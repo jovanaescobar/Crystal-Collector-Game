@@ -1,0 +1,28 @@
+body {
+    background-image: url(https://www.gsjha.com/wp-content/uploads/crystall-grey-1024x1024.jpg); 
+}
+
+
+.row {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace; 
+}
+    
+.crystals {
+    float: right;
+    margin-bottom: 50px;   
+}
+
+.randomNumber {
+    font-family: fantasy;
+}
+
+.userTotal {
+    font-family: fantasy;
+    font-style: italic; 
+    
+}
+
+.winsAndLosses {
+    font-family: fantasy;
+}
