@@ -1,5 +1,4 @@
-Crystal Collector Game
-* Player Guide
+Crystal Collector Game Player Guide
 
 
 - Each colored crystal will uqual a random number between 1-12.
