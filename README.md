@@ -1,7 +1,7 @@
 Crystal Collector Game Player Guide
 
 
-- Each colored crystal will uqual a random number between 1-12.
+- Each colored crystal will equal a random number between 1-12.
 
 - Each round a randomized target number between 19-120 will be generated.
 
