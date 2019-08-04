@@ -1,25 +1,37 @@
 body {
-    background-image: url(https://www.gsjha.com/wp-content/uploads/crystall-grey-1024x1024.jpg); 
+    background-image: url(https://wallpaperaccess.com/full/684945.jpg); 
 }
+
 
 
 .row {
     text-align: center;
     font-family: 'Courier New', Courier, monospace; 
+    color: palevioletred; 
+
 }
     
 .crystals {
     text-align: center;
-    margin-bottom: 50px;   
+    margin-bottom: 50px;  
+    background-color: lightgrey;
+  width: 1000px;
+  border: 10px solid;
+  padding: 5px;
+  margin-left: 110px;
+  
 }
 
-.randomNumber {
+.targetNumber {
     font-family: fantasy;
+
 }
 
-.userTotal {
+.currentScore {
     font-family: fantasy;
     font-style: italic; 
+    color: antiquewhite;
+    text-align: center;
     
 }
 

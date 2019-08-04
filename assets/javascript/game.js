@@ -1,25 +1,8 @@
-
- //RESET THE GAME
-
- function reset(){
-  targetRandom=Math.floor(Math.random()*120+19);
-  console.log(targetRandom)
-  $('#winningNumber').text(targetRandom);
-  crys1= Math.floor(Math.random()*11+1);
-  crys2= Math.floor(Math.random()*11+1);
-  crys3= Math.floor(Math.random()*11+1);
-  crys4= Math.floor(Math.random()*11+1);
-  finalTotal= 0;
-
-  
-  }  
-
-
 // GENERATE RANDOM NUMBER TO START GAME BETWEEN 19-120
 
 $( document ).ready(function(){
     var targetRandom=Math.floor(Math.random()*120+19)
-reset()
+
 
 $('#winningNumber').text(targetRandom);
 
@@ -30,10 +13,11 @@ $('#winningNumber').text(targetRandom);
     var crys2= Math.floor(Math.random()*11+1)
     var crys3= Math.floor(Math.random()*11+1)
     var crys4= Math.floor(Math.random()*11+1)
+    
   
-// CREATE VARIABLES FOR finalTotalS BEING KEPT DURING GAME
+// CREATE VARIABLES FOR SCORES BEING KEPT DURING GAME
 
-    var finalTotal= 0; 
+    var finalScore= 0; 
     var wins= 0;
     var losses = 0;
     
@@ -42,80 +26,95 @@ $('#winningNumber').text(targetRandom);
   $('#losses').text(losses);
 
 
+ //RESET GAME VALUES
+
+ function reset(){
+  targetRandom=Math.floor(Math.random()*120+19);
+  
+  $('#winningNumber').text(targetRandom);
+  crys1= Math.floor(Math.random()*11+1);
+  crys2= Math.floor(Math.random()*11+1);
+  crys3= Math.floor(Math.random()*11+1);
+  crys4= Math.floor(Math.random()*11+1);
+  finalScore= 0;
+}  
+
 
   // TRACK NUMBER OF WINS
   function winner(){
-  alert("WINNER!");
+  alert("YOU WIN!");
     wins++; 
     $('#wins').text(wins);
     reset();
   }
 
   // TRACK NUMBER OF LOSSES
-
   function loser(){
-  alert ("LOSER!");
+  alert ("YOU LOSE!");
     losses++;
     $('#losses').text(losses);
     reset();
   }
 
-// CREATE CLICK FOR CRYS 1-4 
+
+
+// CREATE CLICK FOR CRYSTALS 1-4 
 
 $('#crys1').on ('click', function(){
-      finalTotal = finalTotal + crys1;
-      $('#finalTotal').text(finalTotal); 
+      finalScore = finalScore + crys1;
+      $('#finalScore').text(finalScore); 
 
 
-//ELSE IF , IF finalTotal IS EQUIVILANT TO TARGET NUMBER YOU WIN, IF finalTotal IS OVER TARGET NUMBER,YOU LOSE
-          if (finalTotal == targetRandom){
+//ELSE IF , IF FINAL SCORE IS EQUIVILANT TO TARGET NUMBER YOU WIN, IF FINAL SCORE IS OVER TARGET NUMBER,YOU LOSE
+          if (finalScore == targetRandom){
             winner();
           }
-          else if ( finalTotal > targetRandom){
+          else if ( finalScore > targetRandom){
             loser();
             
      }   
     })  
 
 $('#crys2').on ('click', function(){
-      finalTotal = finalTotal + crys2;
-      $('#finalTotal').text(finalTotal); 
+      finalScore = finalScore + crys2;
+      $('#finalScore').text(finalScore); 
 
-//ELSE IF , IF finalTotal IS EQUIVILANT TO TARGET NUMBER YOU WIN, IF finalTotal IS OVER TARGET NUMBER,YOU LOSE
+//ELSE IF , IF FINAL SCORE IS EQUIVILANT TO TARGET NUMBER YOU WIN, IF FINAL SCORE IS OVER TARGET NUMBER,YOU LOSE
 
-          if (finalTotal == targetRandom){
+          if (finalScore == targetRandom){
             winner();
           }
-          else if ( finalTotal > targetRandom){
+          else if ( finalScore > targetRandom){
             loser();
      } 
     })  
 
 $('#crys3').on ('click', function(){
-      finalTotal = finalTotal + crys3;
-      $('#finalTotal').text(finalTotal);
+      finalScore = finalScore + crys3;
+      $('#finalScore').text(finalScore);
 
-//ELSE IF , IF finalTotal IS EQUIVILANT TO TARGET NUMBER YOU WIN, IF finalTotal IS OVER TARGET NUMBER,YOU LOSE
-        if (finalTotal == targetRandom){
+//ELSE IF , IF FINAL SCORE IS EQUIVILANT TO TARGET NUMBER YOU WIN, IF FINAL SCORE IS OVER TARGET NUMBER,YOU LOSE
+        if (finalScore == targetRandom){
             winner();
           }
-         else if ( finalTotal > targetRandom){
+         else if ( finalScore > targetRandom){
             loser();
      } 
     })  
 $('#crys4').on ('click', function(){
-      finalTotal = finalTotal + crys4;
-      console.log("finalTotal= " + finalTotal);
-      $('#finalTotal').text(finalTotal); 
+      finalScore = finalScore + crys4;
+      console.log("finalScore= " + finalScore);
+      $('#finalScore').text(finalScore); 
         
-//ELSE IF , IF finalTotal IS EQUIVILANT TO TARGET NUMBER YOU WIN, IF finalTotal IS OVER TARGET NUMBER,YOU LOSE
+//ELSE IF , IF FINAL SCORE IS EQUIVILANT TO TARGET NUMBER YOU WIN, IF FINAL SCORE IS OVER TARGET NUMBER,YOU LOSE
 
-      if (finalTotal == targetRandom){
+      if (finalScore == targetRandom){
         winner();
       }
-      else if ( finalTotal > targetRandom){
+      else if ( finalScore > targetRandom){
         loser();
      } 
+
     })
 
 
