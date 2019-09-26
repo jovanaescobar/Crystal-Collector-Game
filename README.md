@@ -18,6 +18,6 @@ Deployed Game Site: https://jovanaescobar.github.io/Crystal-Collector-Game/.
 
     * The crystals will reset to a new point value.
     * The target number will reset.
-    * Yyour current score will reset.
+    * Your current score will reset.
 
 
