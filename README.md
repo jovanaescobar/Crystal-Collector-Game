@@ -1,5 +1,6 @@
-Crystal Collector Game Player Guide
+# Crystal Collector Game Player Guide
 
+Deployed Game Site: https://jovanaescobar.github.io/crystalgame/
 
 - Each colored crystal will equal a random number between 1-12.
 
